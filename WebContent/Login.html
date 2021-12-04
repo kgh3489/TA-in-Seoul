@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>LOGIN</title>
+<link rel="stylesheet" type="text/css" href="Loginstyle.css">
+<script type="text/javascript"> 
+function checkpw() {
+	   var user = document.getElementById("login").value;
+	   var pass = document.getElementById("pwd").value;
+	   if(user == "kgh" && pass == "kghkgh") { window.location.href = "Main.html"; }
+	   else { alert("아이디 또는 비밀번호가 올바르지 않습니다."); }
+}
+</script> 
+</head>
+<body>
+	<div id = "wrap">
+		<div id= top>
+			<h1>LOGIN PAGE</h1>
+		</div>
+	<div id= "main">
+		<div id="middle">
+			<input class= "log" type="text" id= "login"><br/><br/>
+			<input class= "log" type="password" id="pwd" required><br/><br/><br/>
+			<button class= "login_btn" onclick="checkpw();">Login</button> 
+		</div>
+	</div>
+	<div id = "bottom">
+		<hr/>
+		<p>ID : kgh</p>
+		<p>password : kghkgh</p>
+	</div>
+	</div>
+</body>
+</html>
